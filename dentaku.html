@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>電卓</title>
+    <link rel="stylesheet" href="dentaku.css">
+  </head>
+  <body>
+      <table class="dentaku">
+          <tr>
+            <td colspan="4"><input type="text" id="result" readonly></td>
+          </tr>
+
+          <tr>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(9)">9</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(8)">8</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(7)">7</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton('+')">+</button>     
+             </td>  
+          </tr>
+
+          <tr>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(6)">6</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(5)">5</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(4)">4</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton('-')">-</button>     
+             </td>  
+         </tr>
+
+         <tr>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(3)">3</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(2)">2</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(1)">1</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton('*')">*</button>     
+             </td>  
+         </tr>
+
+         <tr>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(00)">00</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton(0)">0</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton('.')">.</button>     
+             </td>
+             <td class="dentaku_b">
+                 <button class = "button"onclick="clickbutton('/')">/</button>     
+             </td>  
+         </tr>
+          
+         <tr>
+             <td colspan="dentaku_c">
+                 <button class = "button"onclick="clearResult('AC')">AC</button>
+             </td> 
+            
+             <td colspan="dentaku_c">
+                 <button class = "button"onclick="clearResult('=')">=</button>     
+             </td>
+          </tr>         
+      </table>
+
+      <script type="text/javascript" src="dentaku.js"></script>
+    </body>
+</html>
+
