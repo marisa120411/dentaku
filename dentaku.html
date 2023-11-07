@@ -3,86 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>電卓</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="dentaku.css">
   </head>
   <body>
-      <table class="dentaku">
-          <tr>
-            <td colspan="4"><input type="text" id="result" readonly></td>
-          </tr>
-
-          <tr>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(9)">9</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(8)">8</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(7)">7</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton('+')">+</button>     
-             </td>  
-          </tr>
-
-          <tr>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(6)">6</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(5)">5</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(4)">4</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton('-')">-</button>     
-             </td>  
-         </tr>
-
-         <tr>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(3)">3</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(2)">2</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(1)">1</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton('*')">*</button>     
-             </td>  
-         </tr>
-
-         <tr>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(00)">00</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton(0)">0</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton('.')">.</button>     
-             </td>
-             <td class="dentaku_b">
-                 <button class = "button"onclick="clickbutton('/')">/</button>     
-             </td>  
-         </tr>
-          
-         <tr>
-             <td colspan="dentaku_c">
-                 <button class = "button"onclick="clearResult('AC')">AC</button>
-             </td> 
-            
-             <td colspan="dentaku_c">
-                 <button class = "button"onclick="clearResult('=')">=</button>     
-             </td>
-          </tr>         
-      </table>
-
-      <script type="text/javascript" src="dentaku.js"></script>
-    </body>
-</html>
-
+    <div class = "container">
+              <div id = "output_total" class="output ">0</div>
+              <div id = "output_sub" class="output active">0</div>
+              <div class = 'input'>
+                  <section class = 'row'>
+                   <div class = "num_bth one_nine " data-index-id = 7 >7</div>
+                   <div class = "num_bth one_nine " data-index-id = 8 >8</div>
+                   <div class = "num_bth one_nine " data-index-id = 9 >9</div>
+                   <div class = "num_bth cal" data-index-id = '+'>+</div>
+                  </section>
+                  <section class = 'row'>
+                   <div class = "num_bth one_nine " data-index-id = 4 >4</div>
+                   <div class = "num_bth one_nine " data-index-id = 5 >5</div>
+                   <div class = "num_bth one_nine " data-index-id = 6 >6</div>
+                   <div class = "num_bth cal" data-index-id = '-'>－</div> 
+                  </section>
+                  <section class = 'row'>
+                   <div class = "num_bth  one_nine" data-index-id = 1 >1</div>
+                   <div class = "num_bth  one_nine" data-index-id = 2 >2</div>
+                   <div class = "num_bth one_nine " data-index-id = 3 >3</div>
+                   <div class = "num_bth cal" data-index-id = '*'>*</div>
+                  </section>
+                  <section class = 'row'>
+                   <div class = "num_bth" id="zero" data-index-id=0 >0</div>
+                   <div class = "num_bth" id="twozero" data-index-id=00 >00</div>
+                   <div class = "num_bth" id="point" data-index-id = . >.</div>
+                   <div class = "num_bth cal" data-index-id= '/'>/</div>
+                  </section>
+                  <section class = 'row'>
+                   <div id = "clear" class="clear">AC</div>
+                   <div id = 'equal_btn' class="equal">=</div>       
+                  </section>        
+              </div>
+            </div>
+        
+            <script src="dentaku.js"></script>
+           </body>
+         </html>
